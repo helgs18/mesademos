@@ -22,6 +22,9 @@ tess_demo: tess_demo.c
 bounce: bounce.c
 	gcc bounce.c ${LDFLAGS} -o bounce
 
+gamma: gamma.c
+	gcc gamma.c ${LDFLAGS} -o gamma
+
 gears: gears.c
 	gcc gears.c ${LDFLAGS} -o gears
 
@@ -32,7 +35,7 @@ winpos: winpos.c
 	gcc winpos.c ${LDFLAGS} -o winpos
 
 
-all: isosurf offset spin tess_demo 
+all: isosurf offset spin tess_demo reflect texobj gears trdemo winpos bounce gamma
 
 clean:
-	rm -rf isosurf offset spin tess_demo 
+	rm -rf isosurf offset spin tess_demo reflect texobj gears trdemo winpos bounce gamma
